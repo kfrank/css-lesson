@@ -1,0 +1,90 @@
+/* ****************************************************************************
+ * BASE STYLES                                                                *
+ **************************************************************************** */
+
+@include border-box-sizing;
+
+@include establish-baseline;
+
+@media screen and (min-width: $tablet-width) {
+  html {
+    font-size: $medium-size;
+  }
+}
+  
+
+.ie8 {
+  body {
+    font-size: $medium-size;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  html {
+    font-size: $large-size;
+  }
+}
+
+html, button, input, select, textarea {
+  color: $text-color;
+}
+  
+body {
+  background-color: $background-color;
+}
+
+// Remove text-shadow in selection highlight: h5bp.com/i
+// These selection declarations have to be separate.
+// Customize the background color to match your design.
+::-moz-selection {
+  background: $highlight-color;
+  color: $background-color;
+  text-shadow: none;
+}
+  
+::selection {
+  background: $highlight-color;
+  color: $background-color;
+  text-shadow: none;
+}
+  
+// A better looking default horizontal rule
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+// Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+img {
+  vertical-align: middle;
+}
+
+// Remove default fieldset styles
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+
+// Allow only vertical resizing of textareas.
+textarea {
+  resize: vertical;
+}
+
+/* ****************************************************************************
+ * LINKS                                                                      *
+ **************************************************************************** */
+
+a {
+  //@include link-colors($link-color,$hover-color,$active-color,$visited-color,$focus-color);
+  color: $link-color;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}

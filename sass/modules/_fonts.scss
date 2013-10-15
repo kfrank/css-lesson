@@ -1,0 +1,14 @@
+/* ****************************************************************************
+ * INCLUDE FONT FACES HERE                                                    *
+ **************************************************************************** */
+
+// @include font-face("icomoon", font-files("icomoon.woff", "icomoon.ttf","icomoon.svg#icomoon"), 'icomoon.eot', normal, normal);
+
+
+/* ****************************************************************************
+ * FONT STACKS: http://cssfontstack.com/                                      *
+ **************************************************************************** */
+
+$serif: Georgia, Times, "Times New Roman", serif;
+$sans:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+$fixed: Consolas, monaco, monospace;

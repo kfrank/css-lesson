@@ -1,0 +1,35 @@
+/* ****************************************************************************
+ * LAYOUTS                                                                    *
+ **************************************************************************** */
+
+$container-style: fluid;
+
+// default view - mobile portrait
+.container {
+  @include container;
+  @include susy-grid-background; // comment out to remove Susy grid background
+  padding: 0 5%;
+  max-width: $max-width;
+}
+
+// mobile landscape view
+@media all and (min-width: $mobile-width) {
+  .container {
+    padding: 0 1.5em;
+  }
+}
+
+// tablet view
+@media all and (min-width: $tablet-width) {
+  .container {}
+}
+
+// desktop view
+@media all and (min-width: $desktop-width) {
+  .container {}
+}
+
+.ie8 {
+  .container {}
+}
+ 

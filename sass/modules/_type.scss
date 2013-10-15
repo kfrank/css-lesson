@@ -1,0 +1,24 @@
+/* ****************************************************************************
+ * BASE FONT SIZES                                                            *
+ **************************************************************************** */
+
+$small-size: 16px;
+$medium-size: 20px;
+$large-size: 22px;
+
+/* ****************************************************************************
+ * VERTICAL RHYTHM                                                            *
+ **************************************************************************** */
+
+$base-size: $small-size;
+$ratio: fifth();
+// $ratio: fourth();
+
+$base-font-size: $base-size;
+$base-line-height: ms(1);
+
+$default-rhythm-border-style: solid;
+$relative-font-sizing: true;
+$round-to-nearest-half-line: true;
+$min-line-padding: 2px;
+$font-unit: 1em;

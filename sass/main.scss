@@ -1,0 +1,45 @@
+/*!
+ * Kickstand
+ * A Sass starting point for H5BP using Compass, Susy, and Modular Scale.
+ * Version: 0.1
+ * Author: Joseph Abrahams
+ * Author URI: http://josephabrahams.com
+ *
+ */ 
+
+
+/* ****************************************************************************
+ * FRAMEWORKS                                                                 *
+ **************************************************************************** */
+
+@import "compass";
+@import "susy";
+@import "modular-scale";
+
+
+/* ****************************************************************************
+ * MODULES                                                                    *
+ **************************************************************************** */
+
+@import "modules/settings";
+@import "modules/colors";
+@import "modules/fonts";
+@import "modules/type";
+@import "modules/grid";
+
+
+/* ****************************************************************************
+ * PARTIALS                                                                   *
+ **************************************************************************** */
+
+@import "partials/normalize";
+@import "partials/layout";
+@import "partials/base";
+@import "partials/helpers";
+@import "partials/print";
+
+
+/* ****************************************************************************
+ * VIEWS                                                                      *
+ **************************************************************************** */
+

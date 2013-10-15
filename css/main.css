@@ -1,0 +1,556 @@
+/*!
+ * Kickstand
+ * A Sass starting point for H5BP using Compass, Susy, and Modular Scale.
+ * Version: 0.1
+ * Author: Joseph Abrahams
+ * Author URI: http://josephabrahams.com
+ *
+ */
+/* ****************************************************************************
+ * FRAMEWORKS                                                                 *
+ **************************************************************************** */
+/* ****************************************************************************
+ * MODULES                                                                    *
+ **************************************************************************** */
+/* ****************************************************************************
+ * BROWSER SUPPORT                                                            *
+ **************************************************************************** */
+/* ****************************************************************************
+ * COLORS                                                                     *
+ **************************************************************************** */
+/* ****************************************************************************
+ * DEFAULTS                                                                   *
+ **************************************************************************** */
+/* ****************************************************************************
+ * INCLUDE FONT FACES HERE                                                    *
+ **************************************************************************** */
+/* ****************************************************************************
+ * FONT STACKS: http://cssfontstack.com/                                      *
+ **************************************************************************** */
+/* ****************************************************************************
+ * BASE FONT SIZES                                                            *
+ **************************************************************************** */
+/* ****************************************************************************
+ * VERTICAL RHYTHM                                                            *
+ **************************************************************************** */
+/* ****************************************************************************
+ * SUSY                                                                       *
+ **************************************************************************** */
+/* ****************************************************************************
+ * PARTIALS                                                                   *
+ **************************************************************************** */
+/* ****************************************************************************
+ * HTML5 display definitions                                                  *
+ **************************************************************************** */
+/* line 8, ../sass/partials/_normalize.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+/* line 13, ../sass/partials/_normalize.scss */
+audio, canvas, video {
+  display: inline-block;
+}
+
+/* line 17, ../sass/partials/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 25, ../sass/partials/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* ****************************************************************************
+ * BASE                                                                       *
+ **************************************************************************** */
+/* line 34, ../sass/partials/_normalize.scss */
+html {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 43, ../sass/partials/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* ****************************************************************************
+ * LINKS                                                                      *
+ **************************************************************************** */
+/* line 53, ../sass/partials/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+/* line 57, ../sass/partials/_normalize.scss */
+a:active, a:hover {
+  outline: 0;
+}
+
+/* ****************************************************************************
+ * TYPOGRAPHY                                                                 *
+ **************************************************************************** */
+/* line 68, ../sass/partials/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 74, ../sass/partials/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 79, ../sass/partials/_normalize.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 84, ../sass/partials/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 89, ../sass/partials/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* line 96, ../sass/partials/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 102, ../sass/partials/_normalize.scss */
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/* line 108, ../sass/partials/_normalize.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 115, ../sass/partials/_normalize.scss */
+q {
+  quotes: '\201C' '\201D' '\2018' '\2019';
+}
+
+/* line 120, ../sass/partials/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 125, ../sass/partials/_normalize.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 132, ../sass/partials/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 136, ../sass/partials/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* ****************************************************************************
+ * EMBEDDED CONTENT                                                           *
+ **************************************************************************** */
+/* line 146, ../sass/partials/_normalize.scss */
+img {
+  border: 0;
+}
+
+/* line 151, ../sass/partials/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ****************************************************************************
+ * FIGURES                                                                    *
+ **************************************************************************** */
+/* line 161, ../sass/partials/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* ****************************************************************************
+ * FORMS                                                                      *
+ **************************************************************************** */
+/* line 171, ../sass/partials/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 177, ../sass/partials/_normalize.scss */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* line 184, ../sass/partials/_normalize.scss */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+/* line 194, ../sass/partials/_normalize.scss */
+button, input {
+  line-height: normal;
+}
+
+/* line 202, ../sass/partials/_normalize.scss */
+button, select {
+  text-transform: none;
+}
+
+/* line 206, ../sass/partials/_normalize.scss */
+button, html input[type='button'], input[type='reset'], input[type='submit'] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 215, ../sass/partials/_normalize.scss */
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+/* line 220, ../sass/partials/_normalize.scss */
+input[type='checkbox'], input[type='radio'] {
+  box-sizing: border-box;
+  padding: 0;
+}
+/* line 226, ../sass/partials/_normalize.scss */
+input[type='search'] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+/* line 234, ../sass/partials/_normalize.scss */
+input[type='search']::-webkit-search-cancel-button, input[type='search']::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 241, ../sass/partials/_normalize.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 246, ../sass/partials/_normalize.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* ****************************************************************************
+ * TABLES                                                                     *
+ **************************************************************************** */
+/* line 259, ../sass/partials/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ****************************************************************************
+ * LAYOUTS                                                                    *
+ **************************************************************************** */
+/* line 8, ../sass/partials/_layout.scss */
+.container {
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(100, 100, 225, 0.25)), color-stop(5.98291%, rgba(100, 100, 225, 0.25)), color-stop(5.98291%, rgba(0, 0, 0, 0)), color-stop(8.54701%, rgba(0, 0, 0, 0)), color-stop(8.54701%, rgba(100, 100, 225, 0.25)), color-stop(14.52991%, rgba(100, 100, 225, 0.25)), color-stop(14.52991%, rgba(0, 0, 0, 0)), color-stop(17.09402%, rgba(0, 0, 0, 0)), color-stop(17.09402%, rgba(100, 100, 225, 0.25)), color-stop(23.07692%, rgba(100, 100, 225, 0.25)), color-stop(23.07692%, rgba(0, 0, 0, 0)), color-stop(25.64103%, rgba(0, 0, 0, 0)), color-stop(25.64103%, rgba(100, 100, 225, 0.25)), color-stop(31.62393%, rgba(100, 100, 225, 0.25)), color-stop(31.62393%, rgba(0, 0, 0, 0)), color-stop(34.18803%, rgba(0, 0, 0, 0)), color-stop(34.18803%, rgba(100, 100, 225, 0.25)), color-stop(40.17094%, rgba(100, 100, 225, 0.25)), color-stop(40.17094%, rgba(0, 0, 0, 0)), color-stop(42.73504%, rgba(0, 0, 0, 0)), color-stop(42.73504%, rgba(100, 100, 225, 0.25)), color-stop(48.71795%, rgba(100, 100, 225, 0.25)), color-stop(48.71795%, rgba(0, 0, 0, 0)), color-stop(51.28205%, rgba(0, 0, 0, 0)), color-stop(51.28205%, rgba(100, 100, 225, 0.25)), color-stop(57.26496%, rgba(100, 100, 225, 0.25)), color-stop(57.26496%, rgba(0, 0, 0, 0)), color-stop(59.82906%, rgba(0, 0, 0, 0)), color-stop(59.82906%, rgba(100, 100, 225, 0.25)), color-stop(65.81197%, rgba(100, 100, 225, 0.25)), color-stop(65.81197%, rgba(0, 0, 0, 0)), color-stop(68.37607%, rgba(0, 0, 0, 0)), color-stop(68.37607%, rgba(100, 100, 225, 0.25)), color-stop(74.35897%, rgba(100, 100, 225, 0.25)), color-stop(74.35897%, rgba(0, 0, 0, 0)), color-stop(76.92308%, rgba(0, 0, 0, 0)), color-stop(76.92308%, rgba(100, 100, 225, 0.25)), color-stop(82.90598%, rgba(100, 100, 225, 0.25)), color-stop(82.90598%, rgba(0, 0, 0, 0)), color-stop(85.47009%, rgba(0, 0, 0, 0)), color-stop(85.47009%, rgba(100, 100, 225, 0.25)), color-stop(91.45299%, rgba(100, 100, 225, 0.25)), color-stop(91.45299%, rgba(0, 0, 0, 0)), color-stop(94.01709%, rgba(0, 0, 0, 0)), color-stop(94.01709%, rgba(100, 100, 225, 0.25)), color-stop(100%, rgba(100, 100, 225, 0.25)), color-stop(100%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 5.98291%, rgba(0, 0, 0, 0) 5.98291%, rgba(0, 0, 0, 0) 8.54701%, rgba(100, 100, 225, 0.25) 8.54701%, rgba(100, 100, 225, 0.25) 14.52991%, rgba(0, 0, 0, 0) 14.52991%, rgba(0, 0, 0, 0) 17.09402%, rgba(100, 100, 225, 0.25) 17.09402%, rgba(100, 100, 225, 0.25) 23.07692%, rgba(0, 0, 0, 0) 23.07692%, rgba(0, 0, 0, 0) 25.64103%, rgba(100, 100, 225, 0.25) 25.64103%, rgba(100, 100, 225, 0.25) 31.62393%, rgba(0, 0, 0, 0) 31.62393%, rgba(0, 0, 0, 0) 34.18803%, rgba(100, 100, 225, 0.25) 34.18803%, rgba(100, 100, 225, 0.25) 40.17094%, rgba(0, 0, 0, 0) 40.17094%, rgba(0, 0, 0, 0) 42.73504%, rgba(100, 100, 225, 0.25) 42.73504%, rgba(100, 100, 225, 0.25) 48.71795%, rgba(0, 0, 0, 0) 48.71795%, rgba(0, 0, 0, 0) 51.28205%, rgba(100, 100, 225, 0.25) 51.28205%, rgba(100, 100, 225, 0.25) 57.26496%, rgba(0, 0, 0, 0) 57.26496%, rgba(0, 0, 0, 0) 59.82906%, rgba(100, 100, 225, 0.25) 59.82906%, rgba(100, 100, 225, 0.25) 65.81197%, rgba(0, 0, 0, 0) 65.81197%, rgba(0, 0, 0, 0) 68.37607%, rgba(100, 100, 225, 0.25) 68.37607%, rgba(100, 100, 225, 0.25) 74.35897%, rgba(0, 0, 0, 0) 74.35897%, rgba(0, 0, 0, 0) 76.92308%, rgba(100, 100, 225, 0.25) 76.92308%, rgba(100, 100, 225, 0.25) 82.90598%, rgba(0, 0, 0, 0) 82.90598%, rgba(0, 0, 0, 0) 85.47009%, rgba(100, 100, 225, 0.25) 85.47009%, rgba(100, 100, 225, 0.25) 91.45299%, rgba(0, 0, 0, 0) 91.45299%, rgba(0, 0, 0, 0) 94.01709%, rgba(100, 100, 225, 0.25) 94.01709%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 5.98291%, rgba(0, 0, 0, 0) 5.98291%, rgba(0, 0, 0, 0) 8.54701%, rgba(100, 100, 225, 0.25) 8.54701%, rgba(100, 100, 225, 0.25) 14.52991%, rgba(0, 0, 0, 0) 14.52991%, rgba(0, 0, 0, 0) 17.09402%, rgba(100, 100, 225, 0.25) 17.09402%, rgba(100, 100, 225, 0.25) 23.07692%, rgba(0, 0, 0, 0) 23.07692%, rgba(0, 0, 0, 0) 25.64103%, rgba(100, 100, 225, 0.25) 25.64103%, rgba(100, 100, 225, 0.25) 31.62393%, rgba(0, 0, 0, 0) 31.62393%, rgba(0, 0, 0, 0) 34.18803%, rgba(100, 100, 225, 0.25) 34.18803%, rgba(100, 100, 225, 0.25) 40.17094%, rgba(0, 0, 0, 0) 40.17094%, rgba(0, 0, 0, 0) 42.73504%, rgba(100, 100, 225, 0.25) 42.73504%, rgba(100, 100, 225, 0.25) 48.71795%, rgba(0, 0, 0, 0) 48.71795%, rgba(0, 0, 0, 0) 51.28205%, rgba(100, 100, 225, 0.25) 51.28205%, rgba(100, 100, 225, 0.25) 57.26496%, rgba(0, 0, 0, 0) 57.26496%, rgba(0, 0, 0, 0) 59.82906%, rgba(100, 100, 225, 0.25) 59.82906%, rgba(100, 100, 225, 0.25) 65.81197%, rgba(0, 0, 0, 0) 65.81197%, rgba(0, 0, 0, 0) 68.37607%, rgba(100, 100, 225, 0.25) 68.37607%, rgba(100, 100, 225, 0.25) 74.35897%, rgba(0, 0, 0, 0) 74.35897%, rgba(0, 0, 0, 0) 76.92308%, rgba(100, 100, 225, 0.25) 76.92308%, rgba(100, 100, 225, 0.25) 82.90598%, rgba(0, 0, 0, 0) 82.90598%, rgba(0, 0, 0, 0) 85.47009%, rgba(100, 100, 225, 0.25) 85.47009%, rgba(100, 100, 225, 0.25) 91.45299%, rgba(0, 0, 0, 0) 91.45299%, rgba(0, 0, 0, 0) 94.01709%, rgba(100, 100, 225, 0.25) 94.01709%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 5.98291%, rgba(0, 0, 0, 0) 5.98291%, rgba(0, 0, 0, 0) 8.54701%, rgba(100, 100, 225, 0.25) 8.54701%, rgba(100, 100, 225, 0.25) 14.52991%, rgba(0, 0, 0, 0) 14.52991%, rgba(0, 0, 0, 0) 17.09402%, rgba(100, 100, 225, 0.25) 17.09402%, rgba(100, 100, 225, 0.25) 23.07692%, rgba(0, 0, 0, 0) 23.07692%, rgba(0, 0, 0, 0) 25.64103%, rgba(100, 100, 225, 0.25) 25.64103%, rgba(100, 100, 225, 0.25) 31.62393%, rgba(0, 0, 0, 0) 31.62393%, rgba(0, 0, 0, 0) 34.18803%, rgba(100, 100, 225, 0.25) 34.18803%, rgba(100, 100, 225, 0.25) 40.17094%, rgba(0, 0, 0, 0) 40.17094%, rgba(0, 0, 0, 0) 42.73504%, rgba(100, 100, 225, 0.25) 42.73504%, rgba(100, 100, 225, 0.25) 48.71795%, rgba(0, 0, 0, 0) 48.71795%, rgba(0, 0, 0, 0) 51.28205%, rgba(100, 100, 225, 0.25) 51.28205%, rgba(100, 100, 225, 0.25) 57.26496%, rgba(0, 0, 0, 0) 57.26496%, rgba(0, 0, 0, 0) 59.82906%, rgba(100, 100, 225, 0.25) 59.82906%, rgba(100, 100, 225, 0.25) 65.81197%, rgba(0, 0, 0, 0) 65.81197%, rgba(0, 0, 0, 0) 68.37607%, rgba(100, 100, 225, 0.25) 68.37607%, rgba(100, 100, 225, 0.25) 74.35897%, rgba(0, 0, 0, 0) 74.35897%, rgba(0, 0, 0, 0) 76.92308%, rgba(100, 100, 225, 0.25) 76.92308%, rgba(100, 100, 225, 0.25) 82.90598%, rgba(0, 0, 0, 0) 82.90598%, rgba(0, 0, 0, 0) 85.47009%, rgba(100, 100, 225, 0.25) 85.47009%, rgba(100, 100, 225, 0.25) 91.45299%, rgba(0, 0, 0, 0) 91.45299%, rgba(0, 0, 0, 0) 94.01709%, rgba(100, 100, 225, 0.25) 94.01709%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+  background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 5.98291%, rgba(0, 0, 0, 0) 5.98291%, rgba(0, 0, 0, 0) 8.54701%, rgba(100, 100, 225, 0.25) 8.54701%, rgba(100, 100, 225, 0.25) 14.52991%, rgba(0, 0, 0, 0) 14.52991%, rgba(0, 0, 0, 0) 17.09402%, rgba(100, 100, 225, 0.25) 17.09402%, rgba(100, 100, 225, 0.25) 23.07692%, rgba(0, 0, 0, 0) 23.07692%, rgba(0, 0, 0, 0) 25.64103%, rgba(100, 100, 225, 0.25) 25.64103%, rgba(100, 100, 225, 0.25) 31.62393%, rgba(0, 0, 0, 0) 31.62393%, rgba(0, 0, 0, 0) 34.18803%, rgba(100, 100, 225, 0.25) 34.18803%, rgba(100, 100, 225, 0.25) 40.17094%, rgba(0, 0, 0, 0) 40.17094%, rgba(0, 0, 0, 0) 42.73504%, rgba(100, 100, 225, 0.25) 42.73504%, rgba(100, 100, 225, 0.25) 48.71795%, rgba(0, 0, 0, 0) 48.71795%, rgba(0, 0, 0, 0) 51.28205%, rgba(100, 100, 225, 0.25) 51.28205%, rgba(100, 100, 225, 0.25) 57.26496%, rgba(0, 0, 0, 0) 57.26496%, rgba(0, 0, 0, 0) 59.82906%, rgba(100, 100, 225, 0.25) 59.82906%, rgba(100, 100, 225, 0.25) 65.81197%, rgba(0, 0, 0, 0) 65.81197%, rgba(0, 0, 0, 0) 68.37607%, rgba(100, 100, 225, 0.25) 68.37607%, rgba(100, 100, 225, 0.25) 74.35897%, rgba(0, 0, 0, 0) 74.35897%, rgba(0, 0, 0, 0) 76.92308%, rgba(100, 100, 225, 0.25) 76.92308%, rgba(100, 100, 225, 0.25) 82.90598%, rgba(0, 0, 0, 0) 82.90598%, rgba(0, 0, 0, 0) 85.47009%, rgba(100, 100, 225, 0.25) 85.47009%, rgba(100, 100, 225, 0.25) 91.45299%, rgba(0, 0, 0, 0) 91.45299%, rgba(0, 0, 0, 0) 94.01709%, rgba(100, 100, 225, 0.25) 94.01709%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+  background-position: left top;
+  -webkit-background-origin: content;
+  -moz-background-origin: content;
+  -ms-background-origin: content-box;
+  -o-background-origin: content-box;
+  background-origin: content-box;
+  -webkit-background-clip: content-box;
+  -moz-background-clip: content-box;
+  background-clip: content-box;
+  padding: 0 5%;
+  max-width: 1200px;
+}
+/* line 38, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media all and (min-width: 481px) {
+  /* line 17, ../sass/partials/_layout.scss */
+  .container {
+    padding: 0 1.5em;
+  }
+}
+/* ****************************************************************************
+ * BASE STYLES                                                                *
+ **************************************************************************** */
+/* line 14, ../../../../../Library/Ruby/Gems/1.8/gems/susy-1.0.9/sass/susy/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 61, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+* html {
+  font-size: 100%;
+}
+
+/* line 64, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 10, ../sass/partials/_base.scss */
+  html {
+    font-size: 20px;
+  }
+}
+/* line 17, ../sass/partials/_base.scss */
+.ie8 body {
+  font-size: 20px;
+}
+
+@media screen and (min-width: 1025px) {
+  /* line 23, ../sass/partials/_base.scss */
+  html {
+    font-size: 22px;
+  }
+}
+/* line 28, ../sass/partials/_base.scss */
+html, button, input, select, textarea {
+  color: #333333;
+}
+
+/* line 32, ../sass/partials/_base.scss */
+body {
+  background-color: white;
+}
+
+/* line 39, ../sass/partials/_base.scss */
+::-moz-selection {
+  background: gray;
+  color: white;
+  text-shadow: none;
+}
+
+/* line 45, ../sass/partials/_base.scss */
+::selection {
+  background: gray;
+  color: white;
+  text-shadow: none;
+}
+
+/* line 52, ../sass/partials/_base.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 62, ../sass/partials/_base.scss */
+img {
+  vertical-align: middle;
+}
+
+/* line 67, ../sass/partials/_base.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 75, ../sass/partials/_base.scss */
+textarea {
+  resize: vertical;
+}
+
+/* ****************************************************************************
+ * LINKS                                                                      *
+ **************************************************************************** */
+/* line 83, ../sass/partials/_base.scss */
+a {
+  color: #333333;
+  text-decoration: none;
+}
+/* line 87, ../sass/partials/_base.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* ****************************************************************************
+ * HTML5 ✰ BOILERPLATE HELPER CLASSES                                         *
+ **************************************************************************** */
+/* line 6, ../sass/partials/_helpers.scss */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  *text-indent: -9999px;
+}
+/* line 11, ../sass/partials/_helpers.scss */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+}
+
+/* line 21, ../sass/partials/_helpers.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* line 27, ../sass/partials/_helpers.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/* line 39, ../sass/partials/_helpers.scss */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* line 51, ../sass/partials/_helpers.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 56, ../sass/partials/_helpers.scss */
+.clearfix {
+  *zoom: 1;
+}
+/* line 58, ../sass/partials/_helpers.scss */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+/* line 68, ../sass/partials/_helpers.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 74, ../sass/partials/_helpers.scss */
+.assistive-text {
+  display: none;
+}
+
+/* ****************************************************************************
+ * PRINT STYLE h5bp.com/r                                                     *
+ **************************************************************************** */
+@media print {
+  /* line 6, ../sass/partials/_print.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 13, ../sass/partials/_print.scss */
+  a, a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 17, ../sass/partials/_print.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 21, ../sass/partials/_print.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 27, ../sass/partials/_print.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 31, ../sass/partials/_print.scss */
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 36, ../sass/partials/_print.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* line 40, ../sass/partials/_print.scss */
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  /* line 44, ../sass/partials/_print.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 52, ../sass/partials/_print.scss */
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 57, ../sass/partials/_print.scss */
+  h2, h3 {
+    page-break-after: avoid;
+  }
+}
+/* ****************************************************************************
+ * VIEWS                                                                      *
+ **************************************************************************** */
